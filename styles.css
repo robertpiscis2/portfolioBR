@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    /* font-weight: bold; */
+    /* background-color: #1b2127; */
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -51,7 +51,7 @@ ul, ol{
     display: flex;
     height: inherit;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 0 0 50px;
     font-size: 22px;
 }
 
@@ -84,6 +84,7 @@ ul, ol{
     height: 403px;
     padding-left: 250px;
     object-fit: cover;
+    /* opacity: 1; */
 }
 
 h1{
@@ -109,8 +110,9 @@ h1 strong{
     width: 100%;
     background-color: white;
     display: flex;
+    flex-direction: row;
     margin-bottom: 100px;
-    justify-content: center;
+    /* justify-content: space-between; */
     box-shadow: 0px 0px 10px #888888;
 }
 
@@ -126,13 +128,13 @@ h1 strong{
 }
 
 .project-date, .project-url{
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
 .project-date small, .project-url small{
     color: gray;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .project-date strong, .project-url strong{
@@ -141,18 +143,27 @@ h1 strong{
 }
 
 .project-description{
-    font-size: 18px;
+    width: 550px;
+    font-size: 24px;
     font-style: italic;
+    font-weight: lighter;
     margin-top: 20px;
 }
 
 .project-details{
     padding-left: 30px;
     padding-top: 30px;
+    /* margin-right: 170px; */
+}
+
+.project-imageContainer{
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
 }
 
 .project-image{
-    height: 100%;
+    height: 400px;
 }
 
 .footer{
@@ -207,8 +218,15 @@ h1 strong{
     padding: 20px;
     background-color: white;
     position: relative;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 5px;
+}
+.event-title{
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .event-image{
@@ -218,11 +236,16 @@ h1 strong{
 }
 
 .event-description{
-    text-align: left;
-    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: lighter;
+    height: 150px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .event-url{
+    margin: 0 auto;
+    text-align: center;
     color: #056fff;
     border: 2px solid;
     padding: 5px 30px;
@@ -277,18 +300,21 @@ h1 strong{
 
 .personal-info{
     margin: 10px 200px 30px 200px;
-    /* background-color: #f4fbff; */
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #888888;
+    padding: 20px;
 }
 
 .personal-img img{
     border-radius: 50%;
+    margin-right: 20px;
 }
 
 .personal-details{
+    font-style: normal;
     font-size: 18px;
     text-align: left;
     letter-spacing: .75px;
@@ -320,7 +346,7 @@ h1 strong{
 .skills-block a{
     color: #056fff;
     border: 2px solid;
-    padding: 5px 30px;
+    padding: 5px 10px;
     text-decoration: none;
     border-radius: 5px;
     margin-right: 60px;
@@ -357,7 +383,7 @@ h1 strong{
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: 5px center;
-    background-color: white;
+    background-color: lightgray;
     padding: 5px 30px;
     width: 250px;
     height: 18px;
@@ -367,18 +393,13 @@ h1 strong{
 }
 
 .contact button{
-    background: none;
+    background: lightgray;
     margin-top: 10px;
     color: white;
     border: 2px solid;
     border-radius: 5px;
     width: 80px;
     height: 30px;
-}
-
-.contact button:hover{
-    background-color: white;
-    color: #056fff;
 }
 
 .social{
@@ -429,6 +450,7 @@ h1 strong{
 .email-hi{
     font-size: 30px;
     font-style: italic;
+    letter-spacing: 1px;
     color: white;
 }
 
