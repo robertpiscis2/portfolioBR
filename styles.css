@@ -4,8 +4,16 @@
 }
 
 body{
+    /* border: 1px solid red; */
     font-family: 'Source Sans Pro', sans-serif;
-    /* background-color: #1b2127; */
+    background-color: #1b2127;
+}
+
+.background-web{
+    /* border: 1px solid green; */
+    width: 73%;
+    background-color: white;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -27,14 +35,10 @@ ul, ol{
     list-style: none;
 }
 
-.header figure{
-    margin: 0;
-    padding: 0;
-}
-
 .menu{
     color: white;
     height: inherit;
+    margin-right: 20px;
 }
 
 .header ol{
@@ -59,6 +63,10 @@ ul, ol{
     color: darkgrey;
 }
 
+.header img{
+    margin-left: -50px;
+}
+
 .link{
     color: white;
     text-decoration: none;
@@ -67,36 +75,29 @@ ul, ol{
 
 .hero{
     height: 400px;
-    /* background-image: url(./img/portada_header.jpeg); */
-    /* background-size: 800px 400px; */
+    background-image: url(./img/proyectoX_wallpaper.jpg); 
+    background-size: 100% 400px; 
     background-color: #1b2127;
-    /* background-repeat: no-repeat; */
-    /* background-position: right; */
+    background-repeat: no-repeat;
+    background-position: center;
     /* overflow: hidden; */
     color: white;
     display: flex;
     margin-bottom: 100px;
-    /* justify-content: end; */
     align-items: center;
 }
 
-.hero-image{
-    height: 403px;
-    padding-left: 250px;
-    object-fit: cover;
-    /* opacity: 1; */
-}
-
 h1{
-    font-size: 42px;
+    font-size: 44px;
     line-height: 1.5;
-    letter-spacing: 3px;
-    margin: 0;
-    padding: 50px 0 50px 0;
+    letter-spacing: 1px;
+    padding-left: 30px;
 }
 
 h1 strong{
     color: #026fff;
+    font-weight: bolder;
+    text-shadow: 0 0 20px black;
 }
 
 .portfolio{
@@ -118,18 +119,18 @@ h1 strong{
 
 .project-title{
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .project-technologies{
     font-size: 24px;
     color: #056fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .project-date, .project-url{
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .project-date small, .project-url small{
@@ -143,23 +144,25 @@ h1 strong{
 }
 
 .project-description{
-    width: 550px;
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: initial;
     margin-top: 20px;
 }
 
 .project-details{
-    padding-left: 30px;
-    padding-top: 30px;
-    /* margin-right: 170px; */
+    padding: 20px 30px;
+    /* flex: 3 1 auto; */
+    width: 40%;
 }
 
 .project-imageContainer{
-    padding: 20px;
+    padding: 20px 30px;
     display: flex;
+    /* flex: 2 1 auto; */
+    width: 60%;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .project-image{
@@ -196,13 +199,15 @@ h1 strong{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 30px 0 30px 0;
+    margin: 0 auto 100px auto;
+    box-shadow: 0px 0px 10px #888888;
 }
 
 .event{
-    margin: 0 auto 100px auto;
-    width: 480px;
+    margin: 0 auto;
+    width: 40%;
     border-radius: 10px;
-    flex-shrink: 0;
     overflow: hidden;
     background-color: #f4fbff;
     box-shadow: 0px 0px 10px #888888;
@@ -224,28 +229,28 @@ h1 strong{
     border-radius: 5px;
 }
 .event-title{
-    font-size: 22px;
-    margin-bottom: 30px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .event-image{
-    width: 480px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
 .event-description{
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: initial;
     height: 150px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .event-url{
     margin: 0 auto;
-    text-align: center;
     color: #056fff;
     border: 2px solid;
     padding: 5px 30px;
@@ -261,7 +266,8 @@ h1 strong{
 .h2-title{
     font-size: 44px;
     color: #056fff;
-    margin-left: 250px;
+    /* margin-left: 580px; */
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -299,7 +305,8 @@ h1 strong{
 }
 
 .personal-info{
-    margin: 10px 200px 30px 200px;
+    width: 80%;
+    margin: 10px auto 30px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,13 +317,13 @@ h1 strong{
 
 .personal-img img{
     border-radius: 50%;
-    margin-right: 20px;
 }
 
 .personal-details{
     font-style: normal;
+    font-weight: initial;
     font-size: 18px;
-    text-align: left;
+    text-align: center;
     letter-spacing: .75px;
     word-spacing: 3px;
     padding: 20px;
@@ -324,33 +331,32 @@ h1 strong{
 
 .skills-all{
     display: flex;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
     justify-content: center;
-    margin-left: 50px;
 }
 
-.skills-design, .skills-programming{
-    display: flex;
-}
-
-.skills-design{
-    margin-right: 50px;
-}
+.skills-list{
+    display: flex; 
+    align-items: center;
+      /* justify-content: space-between; */
+} 
 
 .skills-block{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 40px;
 }
 
 .skills-block a{
     color: #056fff;
     border: 2px solid;
-    padding: 5px 10px;
+    padding: 2px 3px;
     text-decoration: none;
     border-radius: 5px;
-    margin-right: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -456,7 +462,7 @@ h1 strong{
 
 .container{
     /* border: 1px solid red; */
-    width: 1400px;
+    width: 100%;
     margin: 0 auto;
     display: inherit;
     flex-direction: inherit;
@@ -464,4 +470,342 @@ h1 strong{
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+/*MEDIA QUERIES - RESPONSIVE DESIGN
+DESKTOP FIRST (De grande a chico)*/
+@media screen and (max-width: 1400px){
+    .background-web{
+        width: 100%;
+    }
+    
+    .container{
+        width: 100%;
+    }
+
+    h1{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .skills-block{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .menu{
+        margin-right: 10px;
+    }
+
+    h1{
+        padding-left: 30px;
+        font-size: 40px;
+    }
+
+    .personal-details{
+        font-size: 16px;
+    }
+
+    .project-description{
+        font-size: 18px;
+    }
+
+    .submit{
+        display: none;
+    }
+
+    .skills-block{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 930px)
+{
+    h1{
+        padding-left: 20px;
+        font-size: 36px;
+    }
+
+    .header{
+        flex-direction: column;
+        height: 170px;
+        padding-bottom: 5px;
+    }
+
+    .header a{
+        align-items: flex-end;
+        padding-left: 0;
+        color: #026fff;
+    }
+
+    .header img{
+        margin: 0;
+        height: 120px;
+    }
+
+    .link{
+        margin: 10px 25px 0px 25px;
+    }
+
+    .menu{
+        margin: 0;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .h2-title{
+        font-size: 36px;
+    }
+
+    .event-title{
+        font-size: 18px;
+    }
+
+    .event-description{
+        font-size: 14px;
+    }
+
+    .project-description{
+        font-size: 16px;
+    }
+
+    .project{
+        flex-direction: column;
+    }
+
+    .project-details{
+        padding: 0;
+        width: 80%;
+        text-align: center;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 830px){
+    h1{
+        letter-spacing: 0.5px;
+    }
+    
+    .event-list{
+        flex-direction: column;
+    }
+
+    .event{
+        margin-bottom: 100px;
+        width: 60%;
+    }
+
+    .event.event-final{
+        margin-bottom: 0;
+    }
+
+    .skills-all{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 30px;
+    }
+
+    .personal-info{
+        flex-direction: column;
+    }
+
+    .personal-img img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .skills-block{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    h1{
+        font-size: 26px;
+    }
+
+    .skills-block{
+        padding: 0 2px;
+    }
+
+    .skills-all{
+        font-size: 14px;
+        font-weight: initial;
+    }
+
+    .email-me {
+        flex: 1 1 auto;
+    }
+
+    .social {
+        flex: 1 1 auto;
+    }
+
+    .email-hi {
+        font-size: 20px;
+    }
+
+    .social-network-link {
+        width: 45px;
+        height: 45px;
+        background-size: 45px 45px;
+    }
+
+    .skills-block a{
+        border: 1px solid;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        height: 120px;
+    }
+    
+    .header a{
+        font-size: 18px;
+    }
+
+    .header img{
+        height: 80px;
+    }
+
+    .hero {
+        height: 200px;
+        background-size: 100% 100%;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    .h2-title {
+        font-size: 30px;
+    }
+
+    .personal-texts h3, .skills-title h3 {
+        font-size: 24px;
+    }
+
+    .personal-texts h4 {
+        font-size: 18px;
+    }
+
+    .personal-details {
+        font-size: 12px;
+    }
+
+    .skills-all {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header a {
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    .personal-img img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .skills-all {
+        font-size: 8px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-technologies {
+        font-size: 16px;
+    }
+
+    .project-date, .project-url {
+        font-size: 14px;
+        font-weight: initial;
+    }
+
+    .project-description {
+        font-size: 12px;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .event {
+        width: 80%;
+    }
+
+    .h3-text {
+        font-size: 16px;
+    }
+
+    .contact {
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .email-hi {
+        font-size: 12px;
+    }
+
+    .social-network-link {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+    }
+
+    .footer-spanImg, .footer-span {
+        font-size: 10px;
+        font-weight: initial;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .header a {
+        font-size: 10px;
+    }
+
+    .link {
+        margin: 10px 10px 0px 10px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .personal-details{
+        padding: 20px 10px 10px 10px;
+    }
+
+    .event {
+        width: 95%;
+    }
+
+    .event-detail {
+        padding: 15px 5px;
+    }
+
+    .social-network-link.linkedin, .social-network-link.github, .social-network-link.facebook {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    
 }
